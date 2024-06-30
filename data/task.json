@@ -1,0 +1,12 @@
+[
+  {
+    "title": "pendapatan",
+    "description": "30 Juni 2025 = 500.000",
+    "dueDate": "2024-06-30"
+  },
+  {
+    "title": "pengeluaran",
+    "description": "30 juni 2024 = 55.000",
+    "dueDate": "2024-06-30"
+  }
+]

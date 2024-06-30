@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Tambahkan Catatan</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Tambahkan Catatan</h1>
+    <form action="/add" method="POST">
+      <div class="form-group">
+        <label for="title">Judul:</label>
+        <input type="text" id="title" name="title" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Deskripsi:</label>
+        <textarea id="description" name="description" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="dueDate">Waktu/Tanggal:</label>
+        <input type="date" id="dueDate" name="dueDate" required>
+      </div>
+      <button type="submit">Simpan</button>
+    </form>
+  </div>
+</body>
+</html>

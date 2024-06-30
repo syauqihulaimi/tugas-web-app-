@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>CATATANKU</title>
+</head>
+<body>
+  <div class="container">
+    <h1>CATATANKU</h1>
+    <a href="/add" class="add-btn">Tambahkan Catatan</a>
+    <ul class="task-list">
+      <% tasks.forEach(task => { %>
+        <li class="task-item">
+          <div class="task-details">
+            <strong><%= task.title %></strong>
+            <p><%= task.description %></p>
+            <span><%= task.dueDate %></span>
+          </div>
+          <div class="task-actions">
+            <a href="/edit/<%= task.title %>" class="edit-btn">Edit</a>
+            <a href="/delete/<%= task.title %>" class="delete-btn">Hapus</a>
+          </div>
+        </li>
+      <% }); %>
+    </ul>
+  </div>
+</body>
+</html>
